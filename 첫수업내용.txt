@@ -1,1 +1,17 @@
-1. git에 대해 배운다.
+git에 대해
+
+[올릴 때 push]
+
+$ git add .
+-> 파일을 올린다
+
+$ git commit -m "message"
+-> commit을 한다.
+
+$ git push
+-> push, 올리는 작업
+
+[받을 때 pull]
+
+$ git pull
+
