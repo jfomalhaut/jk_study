@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>부모선택자</title>
+	<style>
+		span {
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		article {
+			background: #f0f0f0;
+			padding: 20px;
+			width: 300px;
+		}
+		/* 
+			> 가 있으면 바로 밑의 자식이 되고 > 를 생략하면 자손이 된다 
+		*/
+		article > span {
+			color: red;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<article>
+			<span>span태그</span>
+		</article>
+		<span>span태그</span>
+	</div>
+</body>
+</html>

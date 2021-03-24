@@ -1,0 +1,32 @@
+<html>
+<head>
+	<style>
+		.container {
+			width: 1000px;
+			height: 700px;
+			margin: 0 auto;
+			background: #f0f0f0;
+			position: relative;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			background: dodgerblue;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: .5s;
+		}
+
+		.container:hover .box {
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+	</div>
+</body>
+</html>
