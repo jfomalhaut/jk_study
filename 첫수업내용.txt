@@ -28,3 +28,6 @@ display, position, float, laylout
 레이아웃
 
 [5일차]
+
+[8일차]
+자바스크립트 조건문
