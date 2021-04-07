@@ -1,0 +1,35 @@
+<html>
+<head>
+	<style>
+		.container {
+			width: 1000px;
+			height: 1000px;
+			background: silver;
+			margin: 0 auto;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			float: left;
+			margin-right: 10px;
+		}
+		.black {
+			background: black;
+		}
+		.box:nth-child(3n){
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box black"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>

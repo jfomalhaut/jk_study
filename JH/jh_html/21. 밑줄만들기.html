@@ -1,0 +1,29 @@
+<html>
+<head>
+    <style>
+    h1 {
+        margin: 100px auto;
+        font-size: 50px;
+        width: 500px;
+        cursor: pointer;
+        position: relative;
+    }
+    h1:before {
+        content: '';
+        width: 0%;
+        transition: .5s;
+        height: 2px;
+        background: black;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    h1:hover:before {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <h1>우리는 학교에 갑니다</h1>
+</body>
+</html>

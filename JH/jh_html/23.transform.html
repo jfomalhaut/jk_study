@@ -1,0 +1,56 @@
+<html>
+<head>
+	<style>
+		.container {
+			width: 1000px;
+			margin: 20px auto;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 20px;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background: darkgray;
+		}
+
+		.inner {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(30, 144, 255, .7);
+			transition: .3s;
+		}
+
+		.box:hover .translate {
+			transform: translate(50px, 50px);
+		}
+
+		.box:hover .rotate {
+			transform: rotate(90deg);
+		}
+
+		.box:hover .scale {
+			transform: scale(1.2);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="inner translate"></div>
+		</div>
+		<div class="box">
+			<div class="inner scale"></div>
+		</div>
+		<div class="box">
+			<div class="inner rotate"></div>
+		</div>
+	</div>
+</body>
+</html>

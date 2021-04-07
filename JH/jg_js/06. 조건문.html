@@ -1,0 +1,33 @@
+<html>
+<body>
+	<button onclick="compare1()">비교1</button>
+	<button onclick="compare2()">비교2</button>
+	<script>
+
+		 // Number, String, Boolean
+
+		 var num1 = 100;
+		 var num2 = 100;
+		 var num3 = 200;
+
+		 // num1과 num2를 비교
+		function compare1() {
+			if (num1 === num2) {
+				alert('num1과 num2는 같습니다');
+			} else {
+				alert('num1과 num2는 다릅니다');
+			}
+		}
+
+		// num1과 num3을 비교
+		function compare2() {
+			if (num1 !== num3) {
+				alert('num1과 num3은 다릅니다');
+			} else {
+				alert('num1과 num3은 같습니다');
+			}
+		}
+
+	</script>
+</body>
+</html>

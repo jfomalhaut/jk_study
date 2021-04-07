@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        li{
+            font-size: 50px;
+        }
+        li:before {
+            content: 'SALE';
+            padding: 0 5px;
+            background: #ff0000;
+            color: white;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        li:nth-child(2):after {
+            content: 'hot';
+            background: blue;
+            color: white;
+            padding: 0 5px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        li:nth-child(4):after {
+            content: '맛있어요';
+            padding: 0 5px;
+            background: orange;
+            color: tomato;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>아메리카노</li>
+        <li>카페라떼</li>
+        <li>카푸치노</li>
+        <li>바닐라라떼</li>
+    </ul>
+</body>
+</html>
