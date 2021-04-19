@@ -31,3 +31,7 @@ display, position, float, laylout
 
 [8일차]
 자바스크립트 조건문
+
+[9일차]
+요소잡기, 연동
+반복문, 객체, 배열
