@@ -1,13 +1,31 @@
 <html>
+
 <body>
 	<script>
-		var score = prompt('당신의 수학 점수를 입력하세요(0~ 100)') * 1;
+		var score = prompt('당신의 영어 성적은 입력하세요.(0 ~ 100)') * 1;
 
-		if (score <= 100 && score > 90) {
-			alert('당신의 수학 등급은 A입니다');
-		} else if() { // 81 ~ 90
-			alert('당신의 수학 등급은 B입니다');
+		// A: 91 ~ 100 //
+		// B: 81 ~ 90 //
+		// C: 71~ 80 //
+		// D: 61 ~ 70 //
+		// F: 60이하 //
+		if (score <= 100 && score >= 0 ) {
+			if (score <= 100 && score > 90) {
+				alert('당신의 영어 성적은 A입니다.');
+			} else if (score <= 90 && score > 80) {
+				alert('당신의 영어 성적은 B입니다.');
+			} else if (score <= 80 && score > 70) {
+				alert('당신의 영어 성적은 C입니다.');
+			} else if (score <= 70 && score > 60) {
+				alert('당신의 영어 성적은 D입니다.');
+			} else {
+				alert('당신의 영어 성적은 F입니다.');
+			}
+		} else {
+			alert('올바르지 않은 입력입니다');
 		}
+
 	</script>
 </body>
+
 </html>

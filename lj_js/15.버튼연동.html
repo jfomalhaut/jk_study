@@ -1,0 +1,21 @@
+<html>
+<body>
+	<div id="box"></div>
+	<button id="change">change</button>
+	<!-- ================================================================ -->
+	<script>
+		// get element by id
+		var box = document.getElementById('box');
+		var change = document.getElementById('change');
+
+		function onClickChange() {
+			box.style.width = 300 + 'px';
+			box.style.height = 300 + 'px';
+			box.style.backgroundColor = 'dodgerblue';
+		}
+
+		change.addEventListener('click', onClickChange);
+
+	</script>
+</body>
+</html>
