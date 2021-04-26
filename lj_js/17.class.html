@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+		#box {
+			width: 200px;
+			height: 200px;
+			background: #ddd;
+		}
+
+		.red {
+			background: tomato !important;
+		}
+
+		.blue {
+			background: dodgerblue !important;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<button id="redButton">빨강</button>
+	<button id="blueButton">파랑</button>
+
+	<script>
+		var box = document.getElementById('box');
+		var redButton = document.getElementById('redButton');
+		var blueButton = document.getElementById('blueButton');
+
+		function onClickRed() {
+			box.classList.remove('blue');
+			box.classList.add('red');
+		}
+
+		function onClickBlue() {
+			box.classList.remove('red');
+			box.classList.add('blue');
+		}
+
+		redButton.addEventListener('click', onClickRed);
+		blueButton.addEventListener('click', onClickBlue);
+	</script>
+</body>
+</html>

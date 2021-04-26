@@ -1,0 +1,35 @@
+<html>
+<body>
+	<h1>
+		<span>Count: </span>
+		<b id="count">0</b>
+		<button id="increament">증가</button>
+	</h1>
+
+	<script>
+		// 바꿀 대상
+		var count = document.getElementById('count');
+		// 누를 대상
+		var button = document.getElementById('increament');
+
+		var number = 0;
+
+		// button에 click 반응을 만들어주고, 
+		// button을 click할 때마다 onClick을 호출해준다.
+		button.addEventListener('click', onClick);
+		// button.addEventListener('mouseover', onMouseover);
+
+		// function onMouseover() {
+		// 	console.log('mouseover');
+		// }
+
+		function onClick() {
+			number++;
+			console.log(number);
+			count.innerHTML = number;
+		}
+
+	</script>
+
+</body>
+</html>
